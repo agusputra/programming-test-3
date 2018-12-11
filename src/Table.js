@@ -24,8 +24,6 @@ export default class Table extends React.Component {
 
     this.state = { dragDirection: null, items }
 
-    console.log(props.positions)
-
     this.handleDragEnd = this.handleDragEnd.bind(this)
     this.handleResize = this.handleResize.bind(this)
   }

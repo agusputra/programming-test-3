@@ -33,19 +33,20 @@ export default class App extends React.Component {
 
   componentDidMount() {
     localStorage.setItem('ags:data', true)
-    axios.get('http://localhost:7890/1.1/statuses/user_timeline.json?count=30&screen_name=makeschool')
+    const l = document.location
+    axios.get(`${l.protocol}//${l.hostname}:7890/1.1/statuses/user_timeline.json?count=30&screen_name=makeschool`)
       .then(res => {
         localStorage.setItem('ags:makeschool', JSON.stringify(res.data))
         formatTwitterCreatedAt(res.data)
         this.setState({ makeschool: res.data })
       })
-    axios.get('http://localhost:7890/1.1/statuses/user_timeline.json?count=30&screen_name=newsycombinator')
+    axios.get(`${l.protocol}//${l.hostname}:7890/1.1/statuses/user_timeline.json?count=30&screen_name=newsycombinator`)
       .then(res => {
         localStorage.setItem('ags:news', JSON.stringify(res.data))
         formatTwitterCreatedAt(res.data)
         this.setState({ news: res.data })
       })
-    axios.get('http://localhost:7890/1.1/statuses/user_timeline.json?count=30&screen_name=ycombinator')
+    axios.get(`${l.protocol}//${l.hostname}:7890/1.1/statuses/user_timeline.json?count=30&screen_name=ycombinator`)
       .then(res => {
         localStorage.setItem('ags:ycombinator', JSON.stringify(res.data))
         formatTwitterCreatedAt(res.data)
