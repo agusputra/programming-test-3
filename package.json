@@ -2,13 +2,22 @@
   "name": "list-of-tweets",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
+    "http-server": "^0.11.1",
+    "serve": "^10.1.1",
+    "twitter-proxy": "^2.0.0",
+    "axios": "^0.18.0",
+    "moment": "^2.22.2",
     "react": "^16.6.3",
+    "react-beautiful-dnd": "^10.0.2",
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
+    "static": "serve -s build",
+    "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

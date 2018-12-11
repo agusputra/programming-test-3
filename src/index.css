@@ -1,14 +1,40 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.dark-mode {
+  background: #0f0f0f;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.dark-mode h1,
+.dark-mode h2 {
+  color: white;
+}
+
+.container {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.settings-button {
+  font-size: 1.2rem;
+}
+
+.table-column {
+  margin-bottom: 30px;
+}
+
+.column-head {
+  padding-left: 1rem;
+}
+
+.column-body {
+  height: 360px;
+  overflow-y: scroll;
+  font-size: .9em;
+}
+
+.tweet:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px
+}
+
+.tweet-created-at a {
+  font-size: .9em;
 }
