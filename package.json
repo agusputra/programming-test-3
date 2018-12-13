@@ -16,11 +16,11 @@
   },
   "scripts": {
     "start": "node server.js",
-    "static": "serve -s build",
-    "dev": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "client-start": "serve -s build",
+    "client-dev": "react-scripts start",
+    "client-build": "react-scripts build",
+    "client-test": "react-scripts test",
+    "client-eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
