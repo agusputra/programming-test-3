@@ -4,7 +4,6 @@
   "private": true,
   "homepage": ".",
   "dependencies": {
-    "http-server": "^0.11.1",
     "serve": "^10.1.1",
     "twitter-proxy": "^2.0.0",
     "axios": "^0.18.0",
