@@ -1,5 +1,14 @@
+# How to run the app
+1. Run `npm install`
+2. Run `npm run start` to start the server
+3. Run `npm run client-dev` to start the client dev mode
+4. Open web browser http://localhost:3000
+
+# Screenshot
+![tweets](tweets.png)
+
 # What
-This is the solution from the following test:
+This repo is the solution from the following test:
 
 ## Frontend Coding Challenge
 Introduction
@@ -53,12 +62,3 @@ If you feel inspired, here are more things you can do:
 - Use an interaction (like drag and drop) instead of a form field to order the columns
 - Add another feature you feel is missing from our application
 - Adding unit tests will be great
-
-# How to run the app
-1. Run `npm install`
-2. Run `npm run start` to start the server
-3. Run `npm run client-dev` to start the client dev mode
-4. Open web browser http://localhost:3000
-
-# Screenshot
-![tweets](tweets.png)
