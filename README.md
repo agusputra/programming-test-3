@@ -7,8 +7,8 @@
 # Screenshot
 ![tweets](tweets.png)
 
-# What
-This repo is the solution from the following test:
+# What is this repo?
+This repo is the solution from the following programming test:
 
 ## Frontend Coding Challenge
 Introduction
