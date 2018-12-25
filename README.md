@@ -3,6 +3,8 @@ This repo is the solution of programming test that I've done.
 
 It's a [Frontend Coding Challenge](#frontend-coding-challenge) using React.
 
+[Read more about the challenge](#frontend-coding-challenge)
+
 # How to run the app
 1. Run `npm install`
 2. Run `npm run start` to start the server
