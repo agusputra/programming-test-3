@@ -1,3 +1,8 @@
+# What is this repo?
+This repo is the solution of programming test that I've done.
+
+It's a [Frontend Coding Challenge](#frontend-coding-challenge) using React.
+
 # How to run the app
 1. Run `npm install`
 2. Run `npm run start` to start the server
@@ -7,10 +12,7 @@
 # Screenshot
 ![tweets](tweets.png)
 
-# What is this repo?
-This repo is the solution from the following programming test:
-
-## Frontend Coding Challenge
+# Frontend Coding Challenge
 Introduction
 We are interested in clean & concise JavaScript, HTML, and CSS. Your task is to deliver that by building a small web application built on Twitter’s REST API.
 https://dev.twitter.com/rest/public
