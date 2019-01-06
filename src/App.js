@@ -1,5 +1,4 @@
 import React from 'react'
-import axios from 'axios'
 import moment from 'moment'
 
 import Settings from './Settings'
@@ -32,25 +31,30 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
-    localStorage.setItem('ags:data', true)
     const l = document.location
-    axios.get(`${l.protocol}//${l.hostname}:7890/1.1/statuses/user_timeline.json?count=30&screen_name=makeschool`)
-      .then(res => {
-        localStorage.setItem('ags:makeschool', JSON.stringify(res.data))
-        formatTwitterCreatedAt(res.data)
-        this.setState({ makeschool: res.data })
+
+    localStorage.setItem('ags:data', true)
+
+    fetch(`${l.protocol}//${l.hostname}:7890/1.1/statuses/user_timeline.json?count=30&screen_name=makeschool`)
+      .then(res => res.json())
+      .then(data => {
+        localStorage.setItem('ags:makeschool', JSON.stringify(data))
+        formatTwitterCreatedAt(data)
+        this.setState({ makeschool: data })
       })
-    axios.get(`${l.protocol}//${l.hostname}:7890/1.1/statuses/user_timeline.json?count=30&screen_name=newsycombinator`)
-      .then(res => {
-        localStorage.setItem('ags:news', JSON.stringify(res.data))
-        formatTwitterCreatedAt(res.data)
-        this.setState({ news: res.data })
+    fetch(`${l.protocol}//${l.hostname}:7890/1.1/statuses/user_timeline.json?count=30&screen_name=newsycombinator`)
+      .then(res => res.json())
+      .then(data => {
+        localStorage.setItem('ags:news', JSON.stringify(data))
+        formatTwitterCreatedAt(data)
+        this.setState({ news: data })
       })
-    axios.get(`${l.protocol}//${l.hostname}:7890/1.1/statuses/user_timeline.json?count=30&screen_name=ycombinator`)
-      .then(res => {
-        localStorage.setItem('ags:ycombinator', JSON.stringify(res.data))
-        formatTwitterCreatedAt(res.data)
-        this.setState({ ycombinator: res.data })
+    fetch(`${l.protocol}//${l.hostname}:7890/1.1/statuses/user_timeline.json?count=30&screen_name=ycombinator`)
+      .then(res => res.json())
+      .then(data => {
+        localStorage.setItem('ags:ycombinator', JSON.stringify(data))
+        formatTwitterCreatedAt(data)
+        this.setState({ ycombinator: data })
       })
   }
 

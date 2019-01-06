@@ -4,14 +4,13 @@
   "private": true,
   "homepage": ".",
   "dependencies": {
-    "serve": "^10.1.1",
-    "twitter-proxy": "^2.0.0",
-    "axios": "^0.18.0",
     "moment": "^2.22.2",
     "react": "^16.6.3",
     "react-beautiful-dnd": "^10.0.2",
     "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "serve": "^10.1.1",
+    "twitter-proxy": "^2.0.0"
   },
   "scripts": {
     "start": "node server.js",
