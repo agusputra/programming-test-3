@@ -6,9 +6,9 @@ It's a [Frontend Coding Challenge](#frontend-coding-challenge) using React.
 [Read more about the challenge](#frontend-coding-challenge)
 
 # How to run the app
-1. Run `npm install`
-2. Run `npm run start` to start the server
-3. Run `npm run client-dev` to start the client dev mode
+1. Run `yarn install`
+2. Run `yarn run start` to start the server
+3. Run `yarn run client-dev` to start the client dev mode
 4. Open web browser http://localhost:3000
 
 # Screenshot
@@ -30,7 +30,7 @@ Your solution will be evaluated using the following criteria
 - Code quality (organization, best practices, idiomatic code, design)
 
 ### Part I: Get the Starter Code
-Pre-requisites: You must have Node.js and npm installed.
+Pre-requisites: You must have Node.js and yarn/npm installed.
 
 You can find a  zipped archive of the starter code on Dropbox here:
 https://www.dropbox.com/s/l0uion6zev5q53a/ms-fe-code-challenge%202.zip?dl=0
